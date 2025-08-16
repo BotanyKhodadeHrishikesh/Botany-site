@@ -1,0 +1,217 @@
+:root{
+  --green: #2e7d32;
+  --green-2: #1b5e20;
+  --ink: #0f172a;
+  --ink-2: #364152;
+  --bg: #ffffff;
+  --bg-alt: #f6faf7;
+  --muted: #667085;
+  --border: #e5e7eb;
+}
+
+/* ---------- Base + Background ---------- */
+*{box-sizing:border-box}
+html,body{
+  margin:0;padding:0;
+  color:var(--ink);
+  font:16px/1.6 "Inter",system-ui,Segoe UI,Roboto,Arial,sans-serif;
+  /* fresh, subtle botany gradient */
+  background:
+    radial-gradient(1200px 800px at -10% -10%, #e7fce8 0%, transparent 55%),
+    radial-gradient(1200px 800px at 110% 10%, #e0fff4 0%, transparent 45%),
+    linear-gradient(180deg, #ffffff 0%, #f7fff9 100%);
+}
+.wrap{max-width:1100px;margin:0 auto;padding:0 1rem}
+.section{padding:3rem 0}
+.section.alt{background:var(--bg-alt)}
+a{color:var(--green);text-decoration:none}
+a.link{font-weight:600}
+a:hover{text-decoration:underline}
+
+/* ---------- Topbar ---------- */
+.topbar{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:10}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:.8rem 0}
+.brand{display:flex;align-items:center;gap:.5rem;color:var(--ink);font-weight:800}
+.brand .emoji{font-size:1.3rem}
+.links{display:flex;gap:1rem}
+.links a{color:var(--ink-2);font-weight:600}
+.links a:hover{color:var(--green)}
+
+/* ---------- Hero ---------- */
+.hero{
+  background:linear-gradient(180deg,#ffffff, #f3fff6);
+}
+.hero-grid{display:grid;grid-template-columns:320px 1fr;gap:2rem;align-items:center;padding:2rem 0}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+.hero-photo img{
+  width:320px;height:320px;border-radius:1.25rem;object-fit:cover;
+  border:6px solid #e8f5e9;box-shadow:0 10px 30px rgba(46,125,50,.15)
+}
+.hero-bio h1{margin:0 0 .25rem;font-size:clamp(1.8rem,3vw,2.4rem)}
+.subtitle{margin:0;color:var(--green-2);font-weight:700}
+.affil{color:var(--ink-2)}
+.bio{color:#334155}
+.cta-row{display:flex;gap:.6rem;margin-top:.6rem}
+.btn{
+  display:inline-block;background:var(--green);color:#fff;border-radius:.75rem;
+  padding:.6rem 1rem;border:2px solid var(--green);font-weight:700
+}
+.btn.ghost{background:transparent;color:var(--green)}
+.btn.red{background:#ff0000;color:#fff}
+.btn.red:hover{background:#cc0000}
+
+/* ---------- Cards / Layout ---------- */
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem auto}
+@media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--border);border-radius:1rem;padding:1rem;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+.card.soft{background:#fff}
+.hint{color:var(--muted);font-size:.9rem;margin-top:.4rem}
+
+/* ---------- Daily News (CLEAN, for loop script) ---------- */
+/* ---------- Daily News (scrollable version) ---------- */
+.ticker{
+  position: relative;
+  height: 250px;       /* adjust height as needed */
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: .75rem;
+  overflow-y: auto;     /* add vertical scrollbar */
+  padding: 0;
+}
+
+/* optional: style the list */
+.ticker ul{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+.ticker li{
+  padding:1rem 1.25rem;
+  line-height:1.35;
+  border-bottom:1px dashed var(--border);
+  color:#111827;
+}
+
+/* optional: nicer custom scrollbar (works in WebKit browsers & Firefox) */
+.ticker::-webkit-scrollbar {
+  width: 8px;
+}
+.ticker::-webkit-scrollbar-thumb {
+  background-color: var(--green);
+  border-radius: 4px;
+}
+.ticker::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+}
+/* IMPORTANT: simple list (no animation here; JS will handle swapping) */
+.ticker ul{list-style:none;margin:0;padding:0;width:100%;}
+.ticker li{padding:1rem 1.25rem;line-height:1.35;color:#111827}
+ /* (No keyframes or absolute positioning to avoid conflicts) */
+
+/* ---------- Slideshow ---------- */
+.slideshow{
+  position:relative;height:300px;border:1px dashed var(--border);
+  border-radius:.75rem;overflow:hidden;background:#f3f6f4
+}
+.slideshow img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity .8s ease
+}
+.slideshow img.active{opacity:1}
+.dots{display:flex;gap:.4rem;margin-top:.6rem}
+.dots button{width:10px;height:10px;border-radius:50%;border:0;background:#c7e6ce;cursor:pointer}
+.dots button.active{background:var(--green)}
+
+/* ---------- Courses Overview ---------- */
+.cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+@media (max-width:900px){.cards-3{grid-template-columns:1fr}}
+
+/* ---------- YouTube Grid (narrower cards) ---------- */
+.yt-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); /* responsive + slightly narrower */
+  gap:1rem;
+}
+@media (max-width:900px){.yt-grid{grid-template-columns:repeat(2,1fr)}}
+.yt-card{
+  background:#fff;border:1px solid var(--border);border-radius:.75rem;
+  overflow:hidden;box-shadow:0 6px 16px rgba(0,0,0,.04)
+}
+.yt-card img{
+  width:100%;display:block;height:240px;object-fit:cover;border-radius:.5rem
+}
+.yt-card .meta{padding:.6rem}
+.yt-card .meta h4{margin:.2rem 0 .2rem;font-size:.95rem;color:#0f172a}
+
+/* ---------- Research Snapshot / Two-column ---------- */
+.two{display:grid;grid-template-columns:1.2fr .8fr;gap:1rem;align-items:start}
+@media (max-width:900px){.two{grid-template-columns:1fr}}
+.stats{display:flex;gap:1rem;padding:0;margin:1rem 0;list-style:none}
+.stats li{background:#fff;border:1px solid var(--border);border-radius:.75rem;padding:.6rem 1rem;box-shadow:0 6px 16px rgba(0,0,0,.04)}
+.stats li span{display:block;font-weight:800;font-size:1.2rem;color:var(--green)}
+
+/* ---------- Gallery ---------- */
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem}
+@media (max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:.75rem;border:1px solid var(--border)}
+
+/* ---------- Forms ---------- */
+.form{display:grid;gap:.6rem;max-width:560px}
+.form input,.form textarea{background:#fff;border:1px solid var(--border);border-radius:.6rem;padding:.6rem}
+.form button{justify-self:start}
+
+/* ---------- About ---------- */
+.about-grid{display:grid;grid-template-columns:200px 1fr;gap:1rem;align-items:flex-start}
+@media (max-width:900px){.about-grid{grid-template-columns:1fr}}
+.profile-lg{width:200px;height:200px;object-fit:cover;border-radius:1rem;border:4px solid #e8f5e9;box-shadow:0 10px 30px rgba(46,125,50,.15)}
+
+/* ---------- Footer ---------- */
+.footer{border-top:1px solid var(--border);background:#fff;padding:2rem 0;margin-top:2rem;color:#475467}
+
+/* ---------- Courses (individual pages) ---------- */
+.course-block{margin-bottom:2rem}
+.course-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:1rem;align-items:start}
+@media (max-width:900px){.course-grid{grid-template-columns:1fr}}
+.left .card + .card{margin-top:1rem}
+.tight{margin:.4rem 0 0 1rem}
+.tight li{margin:.3rem 0}
+
+.accord{margin:.5rem 0}
+.accord summary{cursor:pointer;font-weight:700;color:#0f172a}
+.accord[open] summary{color:var(--green)}
+.accord ul{margin:.5rem 0 0 1.2rem}
+
+.right .stack{display:grid;gap:.6rem;position:sticky;top:5.5rem}
+.btn.block{display:block;text-align:center}
+.lead{font-size:1.05rem;color:#334155;max-width:900px}
+
+/* ---------- Courses landing (3 big buttons) ---------- */
+.button-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1rem;margin:1.2rem 0 0;
+}
+@media (max-width:900px){.button-grid{grid-template-columns:1fr}}
+.btn.btn-xl{
+  display:block;text-align:center;padding:1.1rem 1.25rem;
+  font-weight:800;border-radius:1rem;font-size:1.05rem;
+}
+
+/* ---------- Research table ---------- */
+.table-wrap{overflow:auto;border:1px solid var(--border);border-radius:12px;background:#fff}
+.pub-table{width:100%;border-collapse:collapse;font-size:.95rem}
+.pub-table thead th{position:sticky;top:0;background:#f6faf7;color:#0f172a;text-align:left;padding:.8rem;border-bottom:1px solid var(--border)}
+.pub-table td{padding:.7rem .8rem;vertical-align:top;border-bottom:1px solid #eef2f7}
+.pub-table tbody tr:hover{background:#fbfdfb}
+.pub-table em{font-style:italic}
+
+/* ---------- Profile links (Scholar / RG / YouTube) ---------- */
+.profile-links{
+  margin: 1rem 0 2rem;
+  display:flex;gap:1rem;flex-wrap:wrap;
+}
+.profile-links .btn{
+  padding: .6rem 1rem;border-radius:6px;text-decoration:none;font-weight:600;transition: background .2s;
+}
+.profile-links .btn:hover{background:#065f46;color:#fff}
