@@ -28,17 +28,19 @@
 
 <main class="wrap section">
  <main class="wrap section">
+  <main class="wrap section">
   <h1>Contact</h1>
 
   <p>Email: <a href="mailto:khodadesirhhk@gmail.com">khodadesirhhk@gmail.com</a></p>
 
-  <form id="contactForm" class="form" action="https://formspree.io/f/YOUR_ENDPOINT_HERE" method="POST">
+  <form id="contactForm" class="form" action="https://formspree.io/f/mzzvqbdw" method="POST">
     <label>Full Name
       <input name="name" required>
     </label>
 
     <label>Email
-      <input name="_replyto" type="email" required>
+      <!-- Formspree expects this field to be named "email" -->
+      <input name="email" type="email" required>
     </label>
 
     <label>Subject
