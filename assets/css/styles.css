@@ -296,3 +296,61 @@ a:hover{text-decoration:underline}
   .hero-photo img { width: 170px; height: 170px; }
   .yt-card img { height: 160px; }
 }
+/* --- Mobile chip nav --- */
+@media (max-width: 900px){
+  .topbar{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: #fff;
+    border-bottom: 1px solid var(--border);
+    box-shadow: 0 2px 10px rgba(0,0,0,.04);
+  }
+
+  .topbar .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: .6rem 1rem;
+    gap: .4rem;
+  }
+
+  /* The chip row */
+  .topbar .links{
+    display: flex;
+    gap: .6rem;
+    overflow-x: auto;
+    padding: .35rem 0 .55rem;
+    width: 100%;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;          /* Firefox */
+    border-top: 1px dashed var(--border);
+  }
+  .topbar .links::-webkit-scrollbar{ display:none; } /* Chrome/Safari */
+
+  /* Chip look */
+  .topbar .links a{
+    background: #f1f5f9;
+    border: 1px solid #e5e7eb;
+    color: #0f172a;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: .95rem;
+    padding: .45rem .9rem;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .topbar .links a:active{ transform: translateY(1px); }
+}
+
+/* Desktop: keep your existing look (optional: subtle upgrade) */
+@media (min-width: 901px){
+  .topbar .links a{
+    padding: .25rem .5rem;
+    border-radius: .6rem;
+  }
+  .topbar .links a:hover{
+    background: #f1f5f9;
+    text-decoration: none;
+  }
+}
