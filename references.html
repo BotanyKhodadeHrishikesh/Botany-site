@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>References — Hrishikesh H. Khodade</title>
-<link rel="stylesheet" href="assets/css/styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>References — Hrishikesh H. Khodade</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
+
 <header class="topbar">
   <div class="wrap">
     <a class="brand" href="index.html">🌿 Botany @ HHK</a>
@@ -24,27 +25,77 @@
 
 <main class="wrap section">
   <h1>References</h1>
-  <p class="lead">Pick a section: latest trends, curated reading PDFs, or lecture presentations.</p>
+  <p class="lead">Curated reading material, PPTs, and helpful links for FYBSc/SYBSc Botany.</p>
 
-  <div class="cards-3">
-    <article class="card soft">
-      <h2>Current Trends</h2>
-      <p>Handpicked recent articles, videos, and news in Botany.</p>
-      <a class="btn" href="references-trends.html">Explore Trends</a>
-    </article>
+  <!-- Reading Material -->
+  <section class="section">
+    <h2>Reading Material (PDF)</h2>
 
-    <article class="card soft">
-      <h2>Reading Material</h2>
-      <p>Downloadable PDFs and handouts for FYBSc/SYBSc.</p>
-      <a class="btn" href="references-reading.html">Open Reading</a>
-    </article>
+    <div class="cards-3">
+      <!-- Item 1 -->
+      <article class="card soft">
+        <h3>Photoperiodism — Notes</h3>
+        <p>Concept, experiments, florigen and pathways.</p>
+        <a class="btn" href="assets/references/Photoperiodism_Notes.pdf" target="_blank">View / Download PDF</a>
+      </article>
 
-    <article class="card soft">
-      <h2>Presentations</h2>
-      <p>Lecture slides (PPT/PPTX) organized by topic.</p>
-      <a class="btn" href="references-presentations.html">View Presentations</a>
-    </article>
-  </div>
+      <!-- Item 2 -->
+      <article class="card soft">
+        <h3>Classification of Algae (G.M. Smith)</h3>
+        <p>Reference handout for FYBSc Paper I.</p>
+        <a class="btn" href="assets/references/Algae_Classification_GM_Smith.pdf" target="_blank">View / Download PDF</a>
+      </article>
+
+      <!-- Item 3 (example) -->
+      <article class="card soft">
+        <h3>Bacterial Forms — Practical</h3>
+        <p>Shapes, examples, and staining hints.</p>
+        <a class="btn" href="assets/references/Bacterial_Forms_Practical.pdf" target="_blank">View / Download PDF</a>
+      </article>
+    </div>
+
+    <p class="hint">Add more PDFs in <code>assets/references/</code> and duplicate a card above with the new filename and title.</p>
+  </section>
+
+  <!-- PPTs -->
+  <section class="section alt">
+    <h2>Lecture Slides (PPT)</h2>
+
+    <div class="cards-3">
+      <!-- PPT 1 -->
+      <article class="card soft">
+        <h3>Plant Hormones — Part 1</h3>
+        <p>Auxin, GA, cytokinin basics with bioassays.</p>
+        <a class="btn" href="assets/ppts/Plant_Hormones_L1.pptx" target="_blank">Download PPT</a>
+      </article>
+
+      <!-- PPT 2 -->
+      <article class="card soft">
+        <h3>Genetics — Dihybrid Cross</h3>
+        <p>Phenotypic ratios, test cross, tricks.</p>
+        <a class="btn" href="assets/ppts/Genetics_Dihybrid_Cross.pptx" target="_blank">Download PPT</a>
+      </article>
+
+      <!-- PPT 3 (example) -->
+      <article class="card soft">
+        <h3>Ecological Groups — Mesophytes</h3>
+        <p>External and internal features with figures.</p>
+        <a class="btn" href="assets/ppts/Ecological_Groups_Mesophytes.pptx" target="_blank">Download PPT</a>
+      </article>
+    </div>
+
+    <p class="hint">Add PPT/PPTX files in <code>assets/ppts/</code> and duplicate a card above with your new filename.</p>
+  </section>
+
+  <!-- Useful Links -->
+  <section class="section">
+    <h2>Useful Links</h2>
+    <ul>
+      <li>📺 <a href="https://youtube.com/playlist?list=PLwQvgUZsesqvgUTf_dJYkTBUEYC8xrkkV" target="_blank">FYBSc Videos — YouTube Playlist</a></li>
+      <li>📺 <a href="https://youtube.com/playlist?list=PLwQvgUZsesqsc2BtcwneCVdQq4A4Qw8Ma" target="_blank">SYBSc Videos — YouTube Playlist</a></li>
+      <li>📝 <a href="notes.html" target="_blank">Download Notes (existing page)</a></li>
+    </ul>
+  </section>
 </main>
 
 <footer class="footer">
@@ -52,6 +103,7 @@
     <p>© <span id="year"></span> Hrishikesh H. Khodade — Assistant Professor of Botany</p>
   </div>
 </footer>
+
 <script src="assets/js/main.js"></script>
 </body>
 </html>
