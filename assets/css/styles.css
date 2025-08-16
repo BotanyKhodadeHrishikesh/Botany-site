@@ -215,3 +215,15 @@ a:hover{text-decoration:underline}
   padding: .6rem 1rem;border-radius:6px;text-decoration:none;font-weight:600;transition: background .2s;
 }
 .profile-links .btn:hover{background:#065f46;color:#fff}
+/* Lightbox */
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.85);display:flex;align-items:center;justify-content:center;gap:1rem;z-index:9999}
+.lb.hidden{display:none}
+.lb img{max-width:min(92vw,1200px);max-height:88vh;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.lb-close,.lb-prev,.lb-next{
+  position:absolute;background:#fff;border:0;border-radius:999px;width:40px;height:40px;
+  font-size:22px;line-height:40px;text-align:center;cursor:pointer;box-shadow:0 6px 16px rgba(0,0,0,.2)
+}
+.lb-close{top:20px;right:20px}
+.lb-prev{left:24px}
+.lb-next{right:24px}
+
