@@ -3,52 +3,149 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Current Trends — References</title>
+<title>References — Current Trends</title>
 <link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  /* ---- Trends grid (adds on top of your existing CSS) ---- */
+  .subnav {margin-bottom: 1rem; color: var(--muted);}
+  .subnav a{color: var(--green); text-decoration: none}
+  .subnav a:hover{text-decoration: underline}
+
+  .site-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-top: 1.25rem;
+  }
+  @media (max-width: 1000px){ .site-grid{grid-template-columns: repeat(3,1fr);} }
+  @media (max-width: 760px){ .site-grid{grid-template-columns: repeat(2,1fr);} }
+  @media (max-width: 520px){ .site-grid{grid-template-columns: 1fr;} }
+
+  .site-card{
+    display:flex; align-items:center; gap:.9rem;
+    background:#fff; border:1px solid var(--border);
+    border-radius: .9rem; padding: .9rem 1rem;
+    box-shadow: 0 6px 16px rgba(0,0,0,.04);
+    transition: transform .12s ease, box-shadow .12s ease, border-color .12s ease;
+  }
+  .site-card:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 10px 22px rgba(0,0,0,.06);
+    border-color: #dcefe1;
+  }
+  .site-card img{
+    width:44px; height:44px; border-radius:10px; flex:0 0 44px;
+    background:#f3f6f4; object-fit: contain;
+  }
+  .site-meta h3{margin:.05rem 0 .1rem; font-size:1rem; color:#0f172a}
+  .site-meta p{margin:0; font-size:.9rem; color:var(--muted)}
+</style>
 </head>
 <body>
+
 <header class="topbar">
   <div class="wrap">
-    <a class="brand" href="index.html">🌿 Botany @ HHK</a>
+    <a class="brand" href="index.html" aria-label="Home">🌿 Botany @ HHK</a>
     <nav class="links">
       <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="notes.html">Notes</a>
       <a href="references.html">References</a>
       <a href="research.html">Research</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
 <main class="wrap section">
-  <p><a class="link" href="references.html">← Back to References</a></p>
-  <h1>Current Trends</h1>
-  <p class="lead">Recent articles, videos, and updates in Botany & Plant Sciences.</p>
-
-  <div class="cards-3">
-    <article class="card soft">
-      <h3>Green Nanotechnology — Plant-based Nanoparticles</h3>
-      <p>Overview of plant-mediated synthesis and applications.</p>
-      <a class="btn" href="https://example.com/green-nano" target="_blank" rel="noopener">Read Article</a>
-    </article>
-
-    <article class="card soft">
-      <h3>Photoreceptors & Flowering Pathways (Video)</h3>
-      <p>Short talk explaining SDP/LDP and molecular control.</p>
-      <a class="btn" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener">Watch</a>
-    </article>
-
-    <article class="card soft">
-      <h3>Plant Hormones — New Findings</h3>
-      <p>Recent review summarizing hormone cross-talk in stress.</p>
-      <a class="btn" href="https://example.com/hormone-review" target="_blank" rel="noopener">Read Review</a>
-    </article>
+  <div class="subnav">
+    <a href="references.html">← Back to References</a>
   </div>
+  <h1>Current Trends</h1>
+  <p class="lead">Latest journals, articles, and science news in Botany & Plant Science. Tap a card to visit.</p>
 
-  <p class="hint">Add more cards by duplicating one above. If you want to host PDFs here, upload to <code>assets/references/trends/</code> and link them.</p>
+  <div class="site-grid">
+
+    <!-- 1 -->
+    <a class="site-card" href="https://www.cell.com/trends/plant-science/home" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=cell.com" alt="Trends in Plant Science logo">
+      <div class="site-meta">
+        <h3>Trends in Plant Science</h3>
+        <p>cell.com</p>
+      </div>
+    </a>
+
+    <!-- 2 -->
+    <a class="site-card" href="https://horizonepublishing.com/journals/index.php/PST/announcement/view/101" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=horizonepublishing.com" alt="Plant Science Today logo">
+      <div class="site-meta">
+        <h3>Plant Science Today</h3>
+        <p>horizonepublishing.com</p>
+      </div>
+    </a>
+
+    <!-- 3 -->
+    <a class="site-card" href="https://cdnsciencepub.com/journal/cjb" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=cdnsciencepub.com" alt="Canadian Journal of Botany logo">
+      <div class="site-meta">
+        <h3>Canadian Journal of Botany</h3>
+        <p>cdnsciencepub.com</p>
+      </div>
+    </a>
+
+    <!-- 4 -->
+    <a class="site-card" href="https://bsapubs.onlinelibrary.wiley.com/journal/15372197" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=onlinelibrary.wiley.com" alt="American Journal of Botany logo">
+      <div class="site-meta">
+        <h3>American Journal of Botany</h3>
+        <p>wiley.com</p>
+      </div>
+    </a>
+
+    <!-- 5 -->
+    <a class="site-card" href="https://aspb.org/publications/aspb-news/" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=aspb.org" alt="ASPB News logo">
+      <div class="site-meta">
+        <h3>ASPB News</h3>
+        <p>aspb.org</p>
+      </div>
+    </a>
+
+    <!-- 6 -->
+    <a class="site-card" href="https://blog.aspb.org/infographic-our-future-is-rooted-in-plant-science/" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=aspb.org" alt="ASPB Blog logo">
+      <div class="site-meta">
+        <h3>ASPB Blog (Infographic)</h3>
+        <p>aspb.org</p>
+      </div>
+    </a>
+
+    <!-- 7 -->
+    <a class="site-card" href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3315222/" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=ncbi.nlm.nih.gov" alt="NCBI PMC logo">
+      <div class="site-meta">
+        <h3>Plant Science & Society (PMC)</h3>
+        <p>ncbi.nlm.nih.gov</p>
+      </div>
+    </a>
+
+    <!-- 8 -->
+    <a class="site-card" href="https://www.sciencenews.org/topic/plants" target="_blank" rel="noopener">
+      <img src="https://www.google.com/s2/favicons?sz=64&domain=sciencenews.org" alt="Science News logo">
+      <div class="site-meta">
+        <h3>Science News — Plants</h3>
+        <p>sciencenews.org</p>
+      </div>
+    </a>
+
+  </div>
 </main>
 
 <footer class="footer">
   <div class="wrap">
-    <p>© <span id="year"></span> Hrishikesh H. Khodade</p>
+    <p><strong>© <span id="year"></span> Hrishikesh H. Khodade</strong> — Assistant Professor of Botany, Sharadchandra Pawar Mahavidyalaya, Lonand (Affiliated to Shivaji University, Kolhapur).</p>
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
