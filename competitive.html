@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Competitive Exam Guidance — NET/SET (Life Sciences)</title>
+<link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  /* light enhancements, keeps your existing look */
+  .tabs { display:flex; gap:.5rem; flex-wrap:wrap; margin:.5rem 0 1rem; }
+  .tab-btn { border:1px solid var(--border); background:#fff; padding:.5rem .9rem; border-radius:.6rem; cursor:pointer; font-weight:700; }
+  .tab-btn.active { background:var(--green); color:#fff; border-color:var(--green); }
+  .tab-panel { display:none; }
+  .tab-panel.active { display:block; }
+
+  .cards-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+  @media (max-width:900px){ .cards-4{ grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:520px){ .cards-4{ grid-template-columns:1fr;} }
+
+  .book-list { display:grid; gap:.75rem; }
+  .book { background:#fff; border:1px solid var(--border); border-radius:.75rem; padding:.8rem; display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+  .book .meta { font-size:.95rem; }
+  .book .meta strong { display:block; color:var(--ink); }
+  .muted { color: var(--muted); font-size:.9rem; }
+
+  .pill-row { display:flex; gap:.6rem; flex-wrap:wrap; margin:.8rem 0 1rem; }
+  .pill { border:1px solid var(--border); padding:.35rem .6rem; border-radius:999px; font-weight:700; font-size:.9rem; }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Home">
+      <span class="emoji" aria-hidden="true">🌿</span>
+      <span>Botany @ HHK</span>
+    </a>
+    <nav class="links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="courses.html">Courses</a>
+      <a href="references.html">References</a>
+      <a href="research.html">Research</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap section">
+  <h1>Competitive Exam Guidance <span class="muted">— NET / SET (Life Sciences)</span></h1>
+  <p class="lead">Syllabus quick links, high-yield resources, a realistic study plan, sample papers, and your teacher’s curated video lessons — all in one place.</p>
+
+  <!-- SYLLABUS -->
+  <section class="card soft" style="margin-top:1rem;">
+    <h2>Syllabus</h2>
+    <p>Select the official syllabus PDF:</p>
+    <div class="pill-row">
+      <!-- Put your real PDFs in assets/competitive/ and update the hrefs -->
+      <a class="btn" href="assets/competitive/net_syllabus.pdf" target="_blank">📄 NET (Life Sciences) Syllabus</a>
+      <a class="btn ghost" href="assets/competitive/set_maharashtra_syllabus.pdf" target="_blank">📄 SET (Maharashtra) Syllabus</a>
+    </div>
+    <p class="hint">Place the files at <code>assets/competitive/net_syllabus.pdf</code> and <code>assets/competitive/set_maharashtra_syllabus.pdf</code>.</p>
+  </section>
+
+  <!-- EXAM PREP TABS -->
+  <section class="card soft" style="margin-top:1rem;">
+    <h2>Exam Preparation</h2>
+
+    <div class="tabs" id="prepTabs">
+      <button class="tab-btn active" data-tab="books">Reference Books</button>
+      <button class="tab-btn" data-tab="study">Study Plan</button>
+      <button class="tab-btn" data-tab="papers">Sample Question Papers</button>
+      <button class="tab-btn" data-tab="videos">Video Lessons</button>
+    </div>
+
+    <!-- Reference Books -->
+    <div class="tab-panel active" id="tab-books">
+      <div class="book-list">
+        <!-- EXAMPLE rows — replace/add more as you like -->
+        <div class="book">
+          <div class="meta">
+            <strong>Plant Physiology (Taiz & Zeiger)</strong>
+            <span class="muted">Core reference for photosynthesis, growth, hormones, stress.</span>
+          </div>
+          <div>
+            <a class="btn ghost" href="assets/competitive/books/taiz_zeiger_sample.pdf" target="_blank">Download</a>
+          </div>
+        </div>
+
+        <div class="book">
+          <div class="meta">
+            <strong>Molecular Biology of the Cell (Alberts)</strong>
+            <span class="muted">High yield for cell cycle, gene regulation, signaling, cytoskeleton.</span>
+          </div>
+          <div>
+            <a class="btn ghost" href="assets/competitive/books/alberts_sample.pdf" target="_blank">Download</a>
+          </div>
+        </div>
+
+        <div class="book">
+          <div class="meta">
+            <strong>Lehninger Principles of Biochemistry</strong>
+            <span class="muted">Metabolism, enzymes, bioenergetics — frequent NET/SET picks.</span>
+          </div>
+          <div>
+            <a class="btn ghost" href="assets/competitive/books/lehninger_sample.pdf" target="_blank">Download</a>
+          </div>
+        </div>
+
+        <div class="book">
+          <div class="meta">
+            <strong>Ecology (Odum) / Essentials of Ecology (Krebs)</strong>
+            <span class="muted">Population, community, ecosystem & quantitative ecology.</span>
+          </div>
+          <div>
+            <a class="btn ghost" href="assets/competitive/books/ecology_sample.pdf" target="_blank">Download</a>
+          </div>
+        </div>
+      </div>
+      <p class="hint" style="margin-top:.6rem;">Put PDFs (or external links) in <code>assets/competitive/books/...</code>. Use “Download” or change label to “Open / Buy”.</p>
+    </div>
+
+    <!-- Study Plan -->
+    <div class="tab-panel" id="tab-study">
+      <article class="lead">
+        <strong>8-Week High-Yield Plan</strong> (editable text)
+      </article>
+      <ul class="tight">
+        <li><strong>Weeks 1–2:</strong> Cell Biology + Biochemistry basics; daily MCQs (30–40).</li>
+        <li><strong>Weeks 3–4:</strong> Genetics + Molecular Biology; solve previous year questions topic-wise.</li>
+        <li><strong>Weeks 5–6:</strong> Plant Physiology + Ecology; lab methods (microscopy, chromatography, PCR).</li>
+        <li><strong>Week 7:</strong> Revision cycles; full-length mock tests (2–3); error log.</li>
+        <li><strong>Week 8:</strong> PYQs only; short notes & figures; sleep & timing management.</li>
+      </ul>
+      <p class="muted">Tip: Keep a “mistake register”, revise it every 48 hours. Practice graph/data-based questions daily.</p>
+    </div>
+
+    <!-- Sample Papers -->
+    <div class="tab-panel" id="tab-papers">
+      <div class="cards-4">
+        <!-- Replace with your actual PDFs -->
+        <article class="card">
+          <h3>NET 2022 Paper (Life Sciences)</h3>
+          <p class="muted">Memory-based / Official PDF</p>
+          <a class="btn" href="assets/competitive/papers/net_2022.pdf" target="_blank">Download</a>
+        </article>
+        <article class="card">
+          <h3>NET 2021 Paper (Life Sciences)</h3>
+          <p class="muted">Practice set</p>
+          <a class="btn" href="assets/competitive/papers/net_2021.pdf" target="_blank">Download</a>
+        </article>
+        <article class="card">
+          <h3>SET (MH) 2020 Paper</h3>
+          <p class="muted">Life Sciences</p>
+          <a class="btn" href="assets/competitive/papers/set_mh_2020.pdf" target="_blank">Download</a>
+        </article>
+        <article class="card">
+          <h3>Model MCQ Set — 200 Qs</h3>
+          <p class="muted">Topic-wise practice</p>
+          <a class="btn" href="assets/competitive/papers/model_200.pdf" target="_blank">Download</a>
+        </article>
+      </div>
+      <p class="hint" style="margin-top:.6rem;">Add more PDFs inside <code>assets/competitive/papers/</code>.</p>
+    </div>
+
+    <!-- Video Lessons -->
+    <div class="tab-panel" id="tab-videos">
+      <p class="lead">Life Sciences playlist (YouTube)</p>
+      <!-- Replace the LIST_ID with your real playlist ID -->
+      <div style="position:relative;padding-top:56.25%;border-radius:.75rem;overflow:hidden;border:1px solid var(--border);background:#000;">
+        <iframe
+          src="https://www.youtube.com/embed/videoseries?list=PLwQvgUZsesqvgUTf_dJYkTBUEYC8xrkkV"
+          title="Life Sciences Playlist"
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <p style="margin-top:.6rem;">
+        <a class="btn ghost" href="https://youtube.com/playlist?list=PLwQvgUZsesqvgUTf_dJYkTBUEYC8xrkkV" target="_blank">Open on YouTube</a>
+      </p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p><strong>© <span id="year"></span> Hrishikesh H. Khodade</strong> — Assistant Professor of Botany</p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+<script>
+  // simple tabs
+  (function(){
+    const wrap = document.getElementById('prepTabs');
+    if(!wrap) return;
+    const btns = Array.from(wrap.querySelectorAll('.tab-btn'));
+    const panels = {
+      books: document.getElementById('tab-books'),
+      study: document.getElementById('tab-study'),
+      papers: document.getElementById('tab-papers'),
+      videos: document.getElementById('tab-videos'),
+    };
+    function activate(key){
+      btns.forEach(b=>b.classList.toggle('active', b.dataset.tab===key));
+      Object.entries(panels).forEach(([k,el])=>el.classList.toggle('active', k===key));
+      // focus heading for a11y
+      const h = panels[key]?.querySelector('h2,h3,.lead') || panels[key];
+      if(h && h.focus) h.focus();
+    }
+    btns.forEach(b=>b.addEventListener('click', ()=>activate(b.dataset.tab)));
+  })();
+</script>
+</body>
+</html>
