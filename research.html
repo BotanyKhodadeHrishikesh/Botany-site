@@ -3,8 +3,23 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hrishikesh H. Khodade — Botany Educator</title>
+<title>Research — Hrishikesh H. Khodade</title>
 <link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  /* light helpers to arrange cards neatly without touching your theme */
+  .grid-2 { display:grid; grid-template-columns:repeat(2,1fr); gap:1rem; }
+  .grid-3 { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+  .grid-4 { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+  @media (max-width:1000px){ .grid-3{grid-template-columns:repeat(2,1fr);} .grid-4{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:640px){ .grid-2,.grid-3,.grid-4{grid-template-columns:1fr;} }
+
+  .section-title { margin:2rem 0 1rem; }
+  details.card summary { cursor:pointer; font-weight:800; }
+  details.card[open] summary { color:var(--green); }
+  .pill-row { display:flex; flex-wrap:wrap; gap:.6rem; }
+  .hint a { text-decoration:underline; }
+  .ext { opacity:.8; font-size:.95rem; }
+</style>
 </head>
 <body>
 
@@ -29,223 +44,339 @@
 <main class="wrap section">
   <h1>Research</h1>
 
-  <div class="profile-links">
-    <a class="btn" href="https://scholar.google.com/citations?user=SBWYkW8AAAAJ&hl=en" target="_blank" rel="noopener">
-      📖 Google Scholar
-    </a>
-    <a class="btn ghost" href="https://www.researchgate.net/profile/Hrishikesh-Khodade" target="_blank" rel="noopener">
-      🔬 ResearchGate
-    </a>
-  </div>
+  <!-- ======== MY RESEARCH ======== -->
+  <section class="card soft">
+    <h2 class="section-title">My Research</h2>
+    <div class="pill-row" style="margin-bottom:1rem">
+      <a class="btn" href="https://scholar.google.com/citations?user=SBWYkW8AAAAJ&hl=en" target="_blank" rel="noopener">📖 Google Scholar</a>
+      <a class="btn ghost" href="https://www.researchgate.net/profile/Hrishikesh-Khodade" target="_blank" rel="noopener">🔬 ResearchGate</a>
+    </div>
 
-  <p class="lead">Below is a consolidated record of publications, chapters, patents and conference contributions.</p>
+    <!-- Collapsible: Publications, Patents, Conferences -->
+    <details class="card soft" open>
+      <summary>Publications, Book Chapters &amp; Books (click to collapse/expand)</summary>
+      <div class="table-wrap" style="margin-top:1rem">
+        <table class="pub-table" id="pub-table">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Title</th>
+              <th>Journal / Publisher / Conference</th>
+              <th>Year</th>
+              <th>ISBN / ISSN / DOI</th>
+            </tr>
+          </thead>
+          <tbody>
 
-  <div class="table-wrap">
-    <table class="pub-table" id="pub-table">
-      <thead>
-        <tr>
-          <th>Category</th>
-          <th>Title</th>
-          <th>Journal / Publisher / Conference</th>
-          <th>Year</th>
-          <th>ISBN / ISSN / DOI</th>
-        </tr>
-      </thead>
-      <tbody>
+            <!-- === Research Papers === -->
+            <tr>
+              <td>Research Paper</td>
+              <td>Ethno-Medical and Phytochemical Studies on <em>Abrus precatorius</em> L.</td>
+              <td>International Journal of All Research Education and Scientific Methods (IJARESM)</td>
+              <td>2013</td>
+              <td>ISSN: 2455-6211</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Demographic Study and Ecological Contribution by Bhil Tribes of Maharashtra: A Review</td>
+              <td>International Journal of Science Info (IJSI)</td>
+              <td>2015</td>
+              <td>ISSN: 2455-4367</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Medicinal Importance and Chemical Contents in <em>Butea monosperma</em> (Lam.) Taub.</td>
+              <td>IJARESM</td>
+              <td>2015</td>
+              <td>ISSN: 2455-6211</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>E-monograph and Floristic Study of the Family Zygophyllaceae</td>
+              <td>International Journal of Research and Analytical Reviews (IJRAR)</td>
+              <td>2017</td>
+              <td>ISSN: 2349-5138 (UGC Approved list no. 43602)</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Carbon Nanotechnology: A Review</td>
+              <td>International Research Journal of Interdisciplinary Studies</td>
+              <td>2018</td>
+              <td>ISSN: 2454-8499</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Nanotechnology in Agriculture</td>
+              <td>Flora and Fauna: An International Research Journal of Biological Sciences</td>
+              <td>2017</td>
+              <td>ISSN: 0971-6920</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Physical and Chemical Properties of Soil at Karjat Tehsil</td>
+              <td>Online International Interdisciplinary Research Journal</td>
+              <td>2019</td>
+              <td>ISSN: 2249-9598</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Physical and Chemical Properties of Soil at Rajgurunagar (Khed) Tehsil, Pune</td>
+              <td>Flora and Fauna</td>
+              <td>2020</td>
+              <td>ISSN: 2456-9364 (Online); 0971-6920 (Print)</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Medicinal and Phytochemical Aspects of <em>Boswellia serrata</em> Roxb.</td>
+              <td>International Journal of Botany Studies</td>
+              <td>2021</td>
+              <td>ISSN: 2455-541X</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>Review on Green Synthesis and Characterization of Silver Nanoparticles</td>
+              <td>Samriddhi: A Journal of Physical Sciences, Engineering and Technology (UGC-CARE)</td>
+              <td>2022</td>
+              <td>ISSN: 2454-5767</td>
+            </tr>
+            <tr>
+              <td>Research Paper</td>
+              <td>A Cognitive Behavioral Defense Mechanism of Plants Against Herbivory</td>
+              <td>Flora and Fauna</td>
+              <td>2022 / 2023</td>
+              <td>ISSN: 2456-9364 (Online); 0971-6920 (Print) — DOI:
+                <a href="https://doi.org/10.33451/florafauna.v29i1pp49-55" target="_blank" rel="noopener">10.33451/florafauna.v29i1pp49-55</a></td>
+            </tr>
 
-        <!-- === Research Papers === -->
-        <tr>
-          <td>Research Paper</td>
-          <td>Ethno-Medical and Phytochemical Studies on <em>Abrus precatorius</em> L.</td>
-          <td>International Journal of All Research Education and Scientific Methods (IJARESM)</td>
-          <td>2013</td>
-          <td>ISSN: 2455-6211</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Demographic Study and Ecological Contribution by Bhil Tribes of Maharashtra: A Review</td>
-          <td>International Journal of Science Info (IJSI)</td>
-          <td>2015</td>
-          <td>ISSN: 2455-4367</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Medicinal Importance and Chemical Contents in <em>Butea monosperma</em> (Lam.) Taub.</td>
-          <td>IJARESM</td>
-          <td>2015</td>
-          <td>ISSN: 2455-6211</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>E-monograph and Floristic Study of the Family Zygophyllaceae</td>
-          <td>International Journal of Research and Analytical Reviews (IJRAR)</td>
-          <td>2017</td>
-          <td>ISSN: 2349-5138 (UGC Approved list no. 43602)</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Carbon Nanotechnology: A Review</td>
-          <td>International Research Journal of Interdisciplinary Studies</td>
-          <td>2018</td>
-          <td>ISSN: 2454-8499</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Nanotechnology in Agriculture</td>
-          <td>Flora and Fauna: An International Research Journal of Biological Sciences</td>
-          <td>2017</td>
-          <td>ISSN: 0971-6920</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Physical and Chemical Properties of Soil at Karjat Tehsil</td>
-          <td>Online International Interdisciplinary Research Journal</td>
-          <td>2019</td>
-          <td>ISSN: 2249-9598</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Physical and Chemical Properties of Soil at Rajgurunagar (Khed) Tehsil, Pune</td>
-          <td>Flora and Fauna</td>
-          <td>2020</td>
-          <td>ISSN: 2456-9364 (Online); 0971-6920 (Print)</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Medicinal and Phytochemical Aspects of <em>Boswellia serrata</em> Roxb.</td>
-          <td>International Journal of Botany Studies</td>
-          <td>2021</td>
-          <td>ISSN: 2455-541X</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>Review on Green Synthesis and Characterization of Silver Nanoparticles</td>
-          <td>Samriddhi: A Journal of Physical Sciences, Engineering and Technology (UGC-CARE)</td>
-          <td>2022</td>
-          <td>ISSN: 2454-5767</td>
-        </tr>
-        <tr>
-          <td>Research Paper</td>
-          <td>A Cognitive Behavioral Defense Mechanism of Plants Against Herbivory</td>
-          <td>Flora and Fauna</td>
-          <td>2022 / 2023</td>
-          <td>ISSN: 2456-9364 (Online); 0971-6920 (Print) — DOI: <a href="https://doi.org/10.33451/florafauna.v29i1pp49-55" target="_blank" rel="noopener">10.33451/florafauna.v29i1pp49-55</a></td>
-        </tr>
+            <!-- === Book Chapters / Books === -->
+            <tr>
+              <td>Book Chapter</td>
+              <td>Biodiversity Loss</td>
+              <td>In: <em>Current Environmental Issues and Challenges</em></td>
+              <td>2022</td>
+              <td>ISBN: 978-81-954002-9-4</td>
+            </tr>
+            <tr>
+              <td>Book Chapter</td>
+              <td>Mycodegradation of Microplastics</td>
+              <td>Springer Nature, Singapore</td>
+              <td>2024</td>
+              <td>DOI: <a href="https://doi.org/10.1007/978-981-99-8357-5_27" target="_blank" rel="noopener">10.1007/978-981-99-8357-5_27</a> — Print ISBN: 978-981-99-8356-8</td>
+            </tr>
+            <tr>
+              <td>Book Chapter</td>
+              <td>Developmental Strategies Executed by Plants Under Salt Stress</td>
+              <td><em>Trends in Life Sciences</em></td>
+              <td>—</td>
+              <td>ISBN: 978-81-929124-7-9</td>
+            </tr>
+            <tr>
+              <td>Book Chapter</td>
+              <td>Review on Phytoremediation: A Potential Tool</td>
+              <td><em>Contemporary Studies in Arts, Humanity, Commerce, Science and Social Science</em></td>
+              <td>2024</td>
+              <td>ISBN: 978-81-970663-6-8</td>
+            </tr>
+            <tr>
+              <td>Book Chapter</td>
+              <td>Har Gobind Khorana — Chemical Scientist who Contributed to the Development of the Genetic Code (1922–2011)</td>
+              <td><em>The Contribution and Achievements of Men in Various Spheres at National and International Levels</em></td>
+              <td>2023</td>
+              <td>ISBN: 978-93-91033-46-0</td>
+            </tr>
+            <tr>
+              <td>Book</td>
+              <td>Spirulina Farming</td>
+              <td>Amazon Books Publication</td>
+              <td>2023</td>
+              <td>—</td>
+            </tr>
 
-        <!-- === Book Chapters / Books === -->
-        <tr>
-          <td>Book Chapter</td>
-          <td>Biodiversity Loss</td>
-          <td>In: <em>Current Environmental Issues and Challenges</em></td>
-          <td>2022</td>
-          <td>ISBN: 978-81-954002-9-4</td>
-        </tr>
-        <tr>
-          <td>Book Chapter</td>
-          <td>Mycodegradation of Microplastics</td>
-          <td>Springer Nature, Singapore</td>
-          <td>2024</td>
-          <td>DOI: <a href="https://doi.org/10.1007/978-981-99-8357-5_27" target="_blank" rel="noopener">10.1007/978-981-99-8357-5_27</a> — Print ISBN: 978-981-99-8356-8</td>
-        </tr>
-        <tr>
-          <td>Book Chapter</td>
-          <td>Developmental Strategies Executed by Plants Under Salt Stress</td>
-          <td><em>Trends in Life Sciences</em></td>
-          <td>—</td>
-          <td>ISBN: 978-81-929124-7-9</td>
-        </tr>
-        <tr>
-          <td>Book Chapter</td>
-          <td>Review on Phytoremediation: A Potential Tool</td>
-          <td><em>Contemporary Studies in Arts, Humanity, Commerce, Science and Social Science</em></td>
-          <td>2024</td>
-          <td>ISBN: 978-81-970663-6-8</td>
-        </tr>
-        <tr>
-          <td>Book Chapter</td>
-          <td>Har Gobind Khorana — Chemical Scientist who Contributed to the Development of the Genetic Code (1922–2011)</td>
-          <td><em>The Contribution and Achievements of Men in Various Spheres at National and International Levels</em></td>
-          <td>2023</td>
-          <td>ISBN: 978-93-91033-46-0</td>
-        </tr>
-        <tr>
-          <td>Book</td>
-          <td>Spirulina Farming</td>
-          <td>Amazon Books Publication</td>
-          <td>2023</td>
-          <td>—</td>
-        </tr>
+            <!-- === Patents === -->
+            <tr>
+              <td>Patent</td>
+              <td>A Compressible Mortar and Pestle</td>
+              <td>—</td>
+              <td>2022</td>
+              <td>Patent Granted</td>
+            </tr>
+            <tr>
+              <td>Design Patent</td>
+              <td>Food Storage Container</td>
+              <td>—</td>
+              <td>2023</td>
+              <td>Design Patent</td>
+            </tr>
 
-        <!-- === Patents === -->
-        <tr>
-          <td>Patent</td>
-          <td>A Compressible Mortar and Pestle</td>
-          <td>—</td>
-          <td>2022</td>
-          <td>Patent Granted</td>
-        </tr>
-        <tr>
-          <td>Design Patent</td>
-          <td>Food Storage Container</td>
-          <td>—</td>
-          <td>2023</td>
-          <td>Design Patent</td>
-        </tr>
+            <!-- === Conferences / Proceedings === -->
+            <tr>
+              <td>Conference Poster</td>
+              <td>Nanotechnology: A Review on Nanoparticles</td>
+              <td>State Level Seminar IPBAPS-2019</td>
+              <td>2019</td>
+              <td>ISBN: 978-93-89739-28-2</td>
+            </tr>
+            <tr>
+              <td>Conference Poster</td>
+              <td>Antimicrobial Activities of Nanoparticles Synthesized Using <em>Kalanchoe fedtschenkoi</em> Plant Extract</td>
+              <td>Akurdi College</td>
+              <td>2023</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Conference Oral</td>
+              <td>Review on Green Synthesis and Nanotechnology in Agriculture</td>
+              <td>Sonai College</td>
+              <td>2023</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Conference Poster</td>
+              <td>Green Synthesis and Characterization of Silver Nanoparticles and their Antibacterial Activities</td>
+              <td>International Conference: Research in the Life Sciences with Special Emphasis on Medicinal Plants</td>
+              <td>2023</td>
+              <td>—</td>
+            </tr>
+            <tr>
+              <td>Proceedings</td>
+              <td>Nanotechnology: A Review on Silver Nanoparticles</td>
+              <td>National Level Seminar RTSAN-2017</td>
+              <td>2017</td>
+              <td>ISBN: 978-93-82995-52-4</td>
+            </tr>
+            <tr>
+              <td>IEEE Publication</td>
+              <td>An Advanced Machine Learning Based Wear Optimization of Nano-Particles Reinforced High-Strength Metal Matrix Composite</td>
+              <td>IEEE</td>
+              <td>2023</td>
+              <td>DOI: 10.1109/ICOSEC58147.2023.10275954 — ISBN: 979-8-3503-0088-8</td>
+            </tr>
+            <tr>
+              <td>Conference Poster</td>
+              <td>Antifungal Potential of <em>Kalanchoe fedtschenkoi</em> Plant Extract</td>
+              <td>International Conference on Role of Fungi in Sustainable Development: From Exploration to Applications</td>
+              <td>2024</td>
+              <td>—</td>
+            </tr>
 
-        <!-- === Conferences / Proceedings === -->
-        <tr>
-          <td>Conference Poster</td>
-          <td>Nanotechnology: A Review on Nanoparticles</td>
-          <td>State Level Seminar IPBAPS-2019</td>
-          <td>2019</td>
-          <td>ISBN: 978-93-89739-28-2</td>
-        </tr>
-        <tr>
-          <td>Conference Poster</td>
-          <td>Antimicrobial Activities of Nanoparticles Synthesized Using <em>Kalanchoe fedtschenkoi</em> Plant Extract</td>
-          <td>Akurdi College</td>
-          <td>2023</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Conference Oral</td>
-          <td>Review on Green Synthesis and Nanotechnology in Agriculture</td>
-          <td>Sonai College</td>
-          <td>2023</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Conference Poster</td>
-          <td>Green Synthesis and Characterization of Silver Nanoparticles and their Antibacterial Activities</td>
-          <td>International Conference: Research in the Life Sciences with Special Emphasis on Medicinal Plants</td>
-          <td>2023</td>
-          <td>—</td>
-        </tr>
-        <tr>
-          <td>Proceedings</td>
-          <td>Nanotechnology: A Review on Silver Nanoparticles</td>
-          <td>National Level Seminar RTSAN-2017</td>
-          <td>2017</td>
-          <td>ISBN: 978-93-82995-52-4</td>
-        </tr>
-        <tr>
-          <td>IEEE Publication</td>
-          <td>An Advanced Machine Learning Based Wear Optimization of Nano-Particles Reinforced High-Strength Metal Matrix Composite</td>
-          <td>IEEE</td>
-          <td>2023</td>
-          <td>DOI: 10.1109/ICOSEC58147.2023.10275954 — ISBN: 979-8-3503-0088-8</td>
-        </tr>
-        <tr>
-          <td>Conference Poster</td>
-          <td>Antifungal Potential of <em>Kalanchoe fedtschenkoi</em> Plant Extract</td>
-          <td>International Conference on Role of Fungi in Sustainable Development: From Exploration to Applications</td>
-          <td>2024</td>
-          <td>—</td>
-        </tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+  </section>
 
-      </tbody>
-    </table>
-  </div>
+  <!-- ======== HOW TO DO RESEARCH ======== -->
+  <section class="card soft">
+    <h2 class="section-title">How to Do Research</h2>
+    <div class="grid-2">
+      <article class="card">
+        <h3>Write a Good Hypothesis</h3>
+        <p class="ext">Science Buddies: step-by-step guide with examples.</p>
+        <a class="btn" href="https://www.sciencebuddies.org/science-fair-projects/science-fair/writing-a-hypothesis" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>Sample Research Proposals</h3>
+        <p class="ext">York St John University: examples of proposals across subjects.</p>
+        <a class="btn" href="https://www.yorksj.ac.uk/study/postgraduate/research-degrees/apply/examples-of-research-proposals/" target="_blank" rel="noopener">Open</a>
+      </article>
+    </div>
+
+    <details class="card soft" style="margin-top:1rem">
+      <summary>Help with Dissertation, Synopsis &amp; Proposal</summary>
+      <ul class="tight" style="margin-top:.6rem">
+        <li><strong>Dissertation structure:</strong> Title → Abstract → Introduction → Literature Review → Methodology → Results → Discussion → Conclusion → References → Annexures.</li>
+        <li><strong>Synopsis (project proposal):</strong> Background, problem statement, objectives, scope, methods, expected outcomes, tentative timeline, key references.</li>
+        <li><strong>Publication guidance:</strong> Choose scope-fit journal, check author guidelines, format references with a manager, create figures at 300 dpi+, run plagiarism and grammar checks, submit with a clear cover letter (novelty, contribution).</li>
+      </ul>
+      <p class="hint">Tip: keep an “error log” from supervisors/reviewers and resolve items in the next iteration.</p>
+    </details>
+  </section>
+
+  <!-- ======== SOFTWARE TOOLS ======== -->
+  <section class="card soft">
+    <h2 class="section-title">Software Tools for Research</h2>
+    <div class="grid-3">
+      <article class="card">
+        <h3>Mendeley — Reference Manager</h3>
+        <p class="ext">Store PDFs, cite in Word, format references automatically.</p>
+        <a class="btn" href="https://www.mendeley.com/download-reference-manager/windows" target="_blank" rel="noopener">Download</a>
+      </article>
+      <article class="card">
+        <h3>IBM SPSS Statistics</h3>
+        <p class="ext">Statistical analysis for life-science datasets.</p>
+        <a class="btn" href="https://www.ibm.com/products/spss-statistics" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>Zotero — Free Reference Manager</h3>
+        <p class="ext">Open-source alternative to manage citations &amp; PDFs.</p>
+        <a class="btn" href="https://www.zotero.org/" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>Overleaf (LaTeX)</h3>
+        <p class="ext">Collaborative scientific writing with templates.</p>
+        <a class="btn" href="https://www.overleaf.com/" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>RStudio (Posit)</h3>
+        <p class="ext">Statistics &amp; graphics (tidyverse, ggplot2).</p>
+        <a class="btn" href="https://posit.co/download/rstudio-desktop/" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>GraphPad Prism</h3>
+        <p class="ext">Curve fitting, biostatistics &amp; publication-ready graphs.</p>
+        <a class="btn" href="https://www.graphpad.com/" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>ImageJ / Fiji</h3>
+        <p class="ext">Open-source image analysis (microscopy, gels).</p>
+        <a class="btn" href="https://imagej.net/software/fiji/downloads" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>JASP</h3>
+        <p class="ext">Free, simple GUI for frequentist/Bayesian stats.</p>
+        <a class="btn" href="https://jasp-stats.org/download/" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>Publish or Perish</h3>
+        <p class="ext">Analyze citations &amp; h-index from Google Scholar/Scopus.</p>
+        <a class="btn" href="https://harzing.com/resources/publish-or-perish" target="_blank" rel="noopener">Open</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- ======== JOURNAL FINDER & SUBMISSION TIPS ======== -->
+  <section class="card soft">
+    <h2 class="section-title">Find a Journal &amp; Submit</h2>
+    <div class="grid-3">
+      <article class="card">
+        <h3>Elsevier Journal Finder</h3>
+        <p class="ext">Paste your title &amp; abstract to see suitable journals.</p>
+        <a class="btn" href="https://journalfinder.elsevier.com/" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>Springer Nature Journal Suggester</h3>
+        <p class="ext">Matches your manuscript to Springer titles.</p>
+        <a class="btn" href="https://journalsuggester.springer.com/" target="_blank" rel="noopener">Open</a>
+      </article>
+      <article class="card">
+        <h3>Wiley Journal Finder</h3>
+        <p class="ext">Discover Wiley journals aligned to your scope.</p>
+        <a class="btn" href="https://journalfinder.wiley.com/search" target="_blank" rel="noopener">Open</a>
+      </article>
+    </div>
+
+    <details class="card soft" style="margin-top:1rem">
+      <summary>Tips for a Strong Submission</summary>
+      <ul class="tight" style="margin-top:.6rem">
+        <li><strong>Scope fit first:</strong> read 3–5 recent papers from the target journal; mirror style &amp; methods depth.</li>
+        <li><strong>Data > claims:</strong> clear figures (300 dpi+), statistics reported (n, test, p, CI, effect size).</li>
+        <li><strong>References:</strong> use a manager (Mendeley/Zotero) with the journal’s exact style.</li>
+        <li><strong>Cover letter:</strong> 1–2 paragraphs on novelty, significance, and why the journal’s audience cares.</li>
+        <li><strong>Compliance:</strong> ethical approvals, data availability statement, author contributions (CRediT), conflicts.</li>
+        <li><strong>After reviews:</strong> reply to every point; quote the reviewer, then your action; highlight changes in the manuscript.</li>
+      </ul>
+    </details>
+  </section>
 </main>
 
 <footer class="footer">
@@ -254,6 +385,5 @@
   </div>
 </footer>
 <script src="assets/js/main.js"></script>
-
 </body>
 </html>
