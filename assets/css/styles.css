@@ -354,3 +354,39 @@ a:hover{text-decoration:underline}
     text-decoration: none;
   }
 }
+/* Topbar green belt */
+.topbar {
+  background: #2e7d32;   /* deep green */
+  padding: 0.6rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.topbar .brand {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.topbar .links {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.topbar .links a {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;   /* makes pill buttons */
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.topbar .links a:hover {
+  background: #fff;
+  color: #2e7d32;
+}
