@@ -3,8 +3,17 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Reading Material — References</title>
+<title>Practical Knowledge — References</title>
 <link rel="stylesheet" href="assets/css/styles.css" />
+<style>
+  /* small helpers to make the table neat even without extra CSS */
+  .toolbar {display:flex; gap:12px; align-items:center; margin:12px 0;}
+  .toolbar input {padding:.6rem .8rem; border:1px solid #dcdcdc; border-radius:8px; width:280px;}
+  table.pk {width:100%; border-collapse:collapse;}
+  table.pk th, table.pk td {padding:.75rem .8rem; border-bottom:1px solid #eee; text-align:left;}
+  table.pk th {background:#fafafa; font-weight:600;}
+  .muted {color:#6b7280; font-size:.92rem;}
+</style>
 </head>
 <body>
 <header class="topbar">
@@ -20,30 +29,60 @@
 
 <main class="wrap section">
   <p><a class="link" href="references.html">← Back to References</a></p>
-  <h1>Reading Material (PDF)</h1>
-  <p class="lead">Curated PDFs/handouts for FYBSc & SYBSc.</p>
+  <h1>Practical Knowledge (DOC)</h1>
+  <p class="lead">Downloadable Word files for practical experiments & molecular biology techniques.</p>
 
-  <div class="cards-3">
-    <article class="card soft">
-      <h3>Photoperiodism — Notes</h3>
-      <p>Concept, experiments, florigen & pathways.</p>
-      <a class="btn" href="assets/references/reading/Photoperiodism_Notes.pdf" target="_blank">View / Download PDF</a>
-    </article>
-
-    <article class="card soft">
-      <h3>Classification of Algae (G.M. Smith)</h3>
-      <p>FYBSc Paper I reference handout.</p>
-      <a class="btn" href="assets/references/reading/Algae_Classification_GM_Smith.pdf" target="_blank">View / Download PDF</a>
-    </article>
-
-    <article class="card soft">
-      <h3>Bacterial Forms — Practical</h3>
-      <p>Shapes, examples, and staining hints.</p>
-      <a class="btn" href="assets/references/reading/Bacterial_Forms_Practical.pdf" target="_blank">View / Download PDF</a>
-    </article>
+  <div class="toolbar">
+    <input id="q" type="search" placeholder="Search file names… (e.g., Hybridization, Mendel, RFLP)" />
+    <span class="muted" id="count"></span>
   </div>
 
-  <p class="hint">Upload PDFs to <code>assets/references/reading/</code> and duplicate a card above with the new filename.</p>
+  <table class="pk" id="tbl">
+    <thead>
+      <tr>
+        <th style="width:72px;">Sr. No.</th>
+        <th>File Name</th>
+        <th style="width:160px;">Download</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Upload these files to assets/references/practical/ with the same filenames -->
+      <tr><td>1</td><td>cDNA Library</td><td><a href="assets/references/practical/cDNA_Library.doc" target="_blank">Download</a></td></tr>
+      <tr><td>2</td><td>Gene Transfer Methods in Plants</td><td><a href="assets/references/practical/Gene_Transfer_Methods_in_Plants.doc" target="_blank">Download</a></td></tr>
+      <tr><td>3</td><td>Mendel’s Law of Independent Assortment</td><td><a href="assets/references/practical/Mendels_Law_of_Independent_Assortment.doc" target="_blank">Download</a></td></tr>
+      <tr><td>4</td><td>Glossary of Mendel</td><td><a href="assets/references/practical/Glossary_of_Mendel.doc" target="_blank">Download</a></td></tr>
+      <tr><td>5</td><td>Phosphodiester Approach</td><td><a href="assets/references/practical/Phosphodiester_Approach.doc" target="_blank">Download</a></td></tr>
+      <tr><td>6</td><td>Applications of Microarrays / DNA Chips</td><td><a href="assets/references/practical/Applications_of_Microarrays_DNA_Chips.doc" target="_blank">Download</a></td></tr>
+      <tr><td>7</td><td>Nick Translation and End Filling</td><td><a href="assets/references/practical/Nick_Translation_and_End_Filling.doc" target="_blank">Download</a></td></tr>
+      <tr><td>8</td><td>Colony Hybridization</td><td><a href="assets/references/practical/Colony_Hybridization.doc" target="_blank">Download</a></td></tr>
+      <tr><td>9</td><td>Electroporation</td><td><a href="assets/references/practical/Electroporation.doc" target="_blank">Download</a></td></tr>
+      <tr><td>10</td><td>Hybridoma & Monoclonal Antibodies</td><td><a href="assets/references/practical/Hybridoma_and_Monoclonal_Antibodies.doc" target="_blank">Download</a></td></tr>
+      <tr><td>11</td><td>Mendel’s Law of Segregation</td><td><a href="assets/references/practical/Mendels_Law_of_Segregation.doc" target="_blank">Download</a></td></tr>
+      <tr><td>12</td><td>Confirmation of Mendel’s First Law</td><td><a href="assets/references/practical/Confirmation_of_Mendels_First_Law.doc" target="_blank">Download</a></td></tr>
+      <tr><td>13</td><td>Genomic Library (v1)</td><td><a href="assets/references/practical/Genomic_Librar1.doc" target="_blank">Download</a></td></tr>
+      <tr><td>14</td><td>DNA Chips</td><td><a href="assets/references/practical/DNA_Chips.doc" target="_blank">Download</a></td></tr>
+      <tr><td>15</td><td>ELISA — Enzyme Linked Immunosorbent Assay</td><td><a href="assets/references/practical/Enzyme_Linked_Immunosorbent_Assay_ELISA.doc" target="_blank">Download</a></td></tr>
+      <tr><td>16</td><td>Southern Hybridization</td><td><a href="assets/references/practical/Southern_Hybridization.doc" target="_blank">Download</a></td></tr>
+      <tr><td>17</td><td>Gene Transfer Methods (General)</td><td><a href="assets/references/practical/GeneTransfer_Methods.doc" target="_blank">Download</a></td></tr>
+      <tr><td>18</td><td>Use of RFLP</td><td><a href="assets/references/practical/Use_of_RFLP.doc" target="_blank">Download</a></td></tr>
+      <tr><td>19</td><td>Mendel’s Law of Dominance</td><td><a href="assets/references/practical/Mendels_Law_of_Dominance.doc" target="_blank">Download</a></td></tr>
+      <tr><td>20</td><td>Summary Table of Mendel’s Laws</td><td><a href="assets/references/practical/Summary_Table_of_Mendel_Laws.doc" target="_blank">Download</a></td></tr>
+      <tr><td>21</td><td>Genomic Library (v2)</td><td><a href="assets/references/practical/Genomic_Library.doc" target="_blank">Download</a></td></tr>
+      <tr><td>22</td><td>Protein Analysis</td><td><a href="assets/references/practical/Protein_Analysis.doc" target="_blank">Download</a></td></tr>
+      <tr><td>23</td><td>Probes</td><td><a href="assets/references/practical/Probes.doc" target="_blank">Download</a></td></tr>
+      <tr><td>24</td><td>Microarray (typo-fixed if needed)</td><td><a href="assets/references/practical/microaray.doc" target="_blank">Download</a></td></tr>
+      <tr><td>25</td><td>Beta-Glucuronidase (GUS) Gene</td><td><a href="assets/references/practical/Beta_Glucuronidase_GUS_Gene.doc" target="_blank">Download</a></td></tr>
+      <tr><td>26</td><td>Isolation (General)</td><td><a href="assets/references/practical/Isolation.doc" target="_blank">Download</a></td></tr>
+      <tr><td>27</td><td>Genetic Terminology</td><td><a href="assets/references/practical/Genetic_Terminology.doc" target="_blank">Download</a></td></tr>
+      <tr><td>28</td><td>Mendel’s Laws (Overview)</td><td><a href="assets/references/practical/Mendels_Laws.doc" target="_blank">Download</a></td></tr>
+      <tr><td>29</td><td>Isolation of Desired DNA</td><td><a href="assets/references/practical/Isolation_of_desired_DNA.doc" target="_blank">Download</a></td></tr>
+      <tr><td>30</td><td>Gel Electrophoresis</td><td><a href="assets/references/practical/Gel_Electrophoresis.doc" target="_blank">Download</a></td></tr>
+      <tr><td>31</td><td>DNA Sequencing</td><td><a href="assets/references/practical/DNA_Sequencing.doc" target="_blank">Download</a></td></tr>
+      <tr><td>32</td><td>Northern Hybridization</td><td><a href="assets/references/practical/Northern_Hybridization.doc" target="_blank">Download</a></td></tr>
+    </tbody>
+  </table>
+
+  <p class="muted">Tip: keep filenames simple (A–Z, 0–9, underscore). If you convert to DOCX later, just change the extension in both the repo and the links.</p>
 </main>
 
 <footer class="footer">
@@ -51,6 +90,27 @@
     <p>© <span id="year"></span> Hrishikesh H. Khodade</p>
   </div>
 </footer>
+
 <script src="assets/js/main.js"></script>
+<script>
+  // simple client-side search + row count
+  const q = document.getElementById('q');
+  const tbl = document.getElementById('tbl').getElementsByTagName('tbody')[0];
+  const rows = Array.from(tbl.rows);
+  const count = document.getElementById('count');
+  function apply() {
+    const term = q.value.trim().toLowerCase();
+    let shown = 0, i = 1;
+    rows.forEach(r => {
+      const name = r.cells[1].textContent.toLowerCase();
+      const match = !term || name.includes(term);
+      r.style.display = match ? '' : 'none';
+      if (match) { r.cells[0].textContent = i++; shown++; }
+    });
+    count.textContent = shown + " file(s)";
+  }
+  q.addEventListener('input', apply);
+  apply();
+</script>
 </body>
 </html>
