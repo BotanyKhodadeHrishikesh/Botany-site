@@ -64,7 +64,7 @@ a:hover{
 }
 .hero-grid{display:grid;grid-template-columns:320px 1fr;gap:2rem;align-items:center;padding:2rem 0}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
-.hero-photo img{ width:320px; height:430px; object-fit:cover; border-radius:36px; border:8px solid rgba(255,255,255,.85); box-shadow: 0 25px 60px rgba(46,125,50,.20); transition:.4s ease; } .hero-photo img:hover{ transform:translateY(-6px) scale(1.01); }
+.hero-photo img{ width:320px; height:630px; object-fit:cover; border-radius:36px; border:8px solid rgba(255,255,255,.85); box-shadow: 0 25px 60px rgba(46,125,50,.20); transition:.4s ease; } .hero-photo img:hover{ transform:translateY(-6px) scale(1.01); }
 .hero-bio h1{
   margin:0 0 .5rem;
 
