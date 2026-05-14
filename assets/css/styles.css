@@ -658,3 +658,98 @@ details.card.soft summary::before{
 }
 ```
 
+```css id="5s6y3d"
+/* =========================================
+   RESEARCH NEWS SIDEBAR
+========================================= */
+
+.research-news-box{
+  position:relative;
+
+  height:300px;
+
+  border-radius:22px;
+
+  overflow:hidden;
+
+  background:
+    linear-gradient(135deg,#fff8ef,#fff1dd);
+
+  border:1px solid rgba(255,170,0,.15);
+
+  box-shadow:
+    0 10px 25px rgba(255,170,0,.08);
+}
+
+/* SINGLE NEWS CARD */
+.research-news{
+  position:absolute;
+
+  inset:0;
+
+  padding:2rem;
+
+  opacity:0;
+
+  transform:translateX(40px);
+
+  transition:all .7s ease;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+}
+
+.research-news.active{
+  opacity:1;
+
+  transform:translateX(0);
+}
+
+/* BADGE */
+.news-badge{
+  align-self:flex-start;
+
+  background:
+    linear-gradient(135deg,#ff9800,#f57c00);
+
+  color:white;
+
+  padding:.45rem .9rem;
+
+  border-radius:999px;
+
+  font-size:.72rem;
+
+  font-weight:700;
+
+  letter-spacing:.5px;
+
+  margin-bottom:1.2rem;
+
+  box-shadow:
+    0 5px 14px rgba(255,152,0,.25);
+}
+
+/* TEXT */
+.research-news{
+  font-size:1.15rem;
+
+  line-height:1.8;
+
+  color:#334155;
+
+  font-weight:600;
+}
+
+/* SIDE BY SIDE FIX */
+.grid-2{
+  align-items:stretch;
+}
+
+.grid-2 .card{
+  height:100%;
+}
+```
