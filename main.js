@@ -1,5 +1,1 @@
-
-document.addEventListener('DOMContentLoaded',()=>{
-  const y = document.getElementById('year');
-  if(y) y.textContent = new Date().getFullYear();
-});
+document.addEventListener('DOMContentLoaded',()=>{ const y = document.getElementById('year'); if(y) y.textContent = new Date().getFullYear(); /* ========================================= AUTO ROTATING RESEARCH NEWS ========================================= */ const newsItems = document.querySelectorAll('.research-news'); let currentNews = 0; if(newsItems.length > 0){ setInterval(() => { newsItems[currentNews].classList.remove('active'); currentNews = (currentNews + 1) % newsItems.length; newsItems[currentNews].classList.add('active'); }, 4000); } });
