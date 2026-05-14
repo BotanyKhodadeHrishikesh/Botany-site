@@ -21,12 +21,33 @@ html,body{
     radial-gradient(1200px 800px at 110% 10%, #e0fff4 0%, transparent 45%),
     linear-gradient(180deg, #ffffff 0%, #f7fff9 100%);
 }
-.wrap{max-width:1100px;margin:0 auto;padding:0 1rem}
-.section{padding:3rem 0}
-.section.alt{background:var(--bg-alt)}
-a{color:var(--green);text-decoration:none}
-a.link{font-weight:600}
-a:hover{text-decoration:underline}
+.wrap{
+  width:92%;
+  max-width:1400px;
+  margin:0 auto;
+  padding:0 1rem;
+}
+
+.section{
+  padding:5rem 0;
+}
+
+.section.alt{
+  background:var(--bg-alt);
+}
+
+a{
+  color:var(--green);
+  text-decoration:none;
+}
+
+a.link{
+  font-weight:600;
+}
+
+a:hover{
+  text-decoration:underline;
+}
 
 /* ---------- Topbar ---------- */
 .topbar{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:10}
