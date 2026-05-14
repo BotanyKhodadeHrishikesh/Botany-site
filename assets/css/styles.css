@@ -432,3 +432,46 @@ body {
                     radial-gradient(circle at 60% 80%, rgba(56,142,60,0.08) 0%, transparent 30%);
   background-attachment: fixed;
 }
+```css id="drkz1d"
+/* ---------- Research Skills ---------- */
+
+.skills-grid{
+  display:flex;
+  flex-wrap:wrap;
+
+  gap:.8rem;
+
+  margin:1rem 0 2rem;
+}
+
+.skill-chip{
+  background:
+    linear-gradient(135deg,#eefaf1,#dff5e5);
+
+  color:#1b5e20;
+
+  padding:.7rem 1rem;
+
+  border-radius:999px;
+
+  font-size:.95rem;
+
+  font-weight:600;
+
+  border:1px solid rgba(46,125,50,.12);
+
+  box-shadow:
+    0 4px 10px rgba(46,125,50,.08);
+
+  transition:.25s ease;
+}
+
+.skill-chip:hover{
+  transform:translateY(-2px);
+
+  background:
+    linear-gradient(135deg,#2e7d32,#43a047);
+
+  color:white;
+}
+```
