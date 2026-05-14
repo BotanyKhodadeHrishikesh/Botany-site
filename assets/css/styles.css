@@ -658,4 +658,25 @@ details.card.soft summary::before{
 }
 ```
 
+```css id="ykcn8t"
+/* KEEP NEWS + HIGHLIGHTS SIDE BY SIDE */
+
+.grid-2{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:1.5rem;
+
+  align-items:stretch;
+}
+
+@media (max-width:900px){
+
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+
+}
+```
 
