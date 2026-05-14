@@ -433,45 +433,60 @@ body {
   background-attachment: fixed;
 }
 ```css id="drkz1d"
+```css id="c5blzh"
 /* ---------- Research Skills ---------- */
 
-.skills-grid{
-  display:flex;
-  flex-wrap:wrap;
+.research-skills-box{
+  display:grid;
 
-  gap:.8rem;
+  grid-template-columns:1fr 1fr;
+
+  gap:1.5rem;
 
   margin:1rem 0 2rem;
 }
 
-.skill-chip{
+.skill-column{
   background:
-    linear-gradient(135deg,#eefaf1,#dff5e5);
+    linear-gradient(135deg,#f7fff9,#edf8f0);
+
+  padding:1.2rem 1.4rem;
+
+  border-radius:20px;
+
+  border:1px solid rgba(46,125,50,.10);
+
+  box-shadow:
+    0 6px 18px rgba(46,125,50,.06);
+}
+
+.skill-column h4{
+  margin-top:0;
 
   color:#1b5e20;
 
-  padding:.7rem 1rem;
+  font-size:1.05rem;
 
-  border-radius:999px;
-
-  font-size:.95rem;
-
-  font-weight:600;
-
-  border:1px solid rgba(46,125,50,.12);
-
-  box-shadow:
-    0 4px 10px rgba(46,125,50,.08);
-
-  transition:.25s ease;
+  margin-bottom:.8rem;
 }
 
-.skill-chip:hover{
-  transform:translateY(-2px);
+.skill-column ul{
+  margin:0;
+  padding-left:1.2rem;
+}
 
-  background:
-    linear-gradient(135deg,#2e7d32,#43a047);
+.skill-column li{
+  margin-bottom:.55rem;
 
-  color:white;
+  line-height:1.5;
+
+  color:#334155;
+}
+
+/* Mobile */
+@media (max-width:768px){
+  .research-skills-box{
+    grid-template-columns:1fr;
+  }
 }
 ```
