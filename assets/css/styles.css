@@ -1218,3 +1218,68 @@ details.card.soft summary::before{
   }
 
 }
+/* =========================================
+   MOBILE OVERFLOW FIX
+========================================= */
+
+@media (max-width:768px){
+
+  html,
+  body{
+    overflow-x:hidden;
+  }
+
+  *{
+    max-width:100%;
+  }
+
+  img{
+    max-width:100%;
+    height:auto;
+  }
+
+  .wrap{
+    width:100% !important;
+
+    padding:0 .8rem !important;
+  }
+
+  /* About page text */
+
+  .about-grid{
+    grid-template-columns:1fr !important;
+
+    gap:1rem !important;
+  }
+
+  .about-grid div{
+    width:100%;
+  }
+
+  /* Long headings */
+
+  h1,
+  h2,
+  h3,
+  p,
+  li{
+    word-wrap:break-word;
+
+    overflow-wrap:break-word;
+  }
+
+  /* Research badges */
+
+  .hero-highlights{
+    justify-content:flex-start;
+
+    gap:.4rem;
+  }
+
+  .hero-highlights span{
+    font-size:.72rem !important;
+
+    padding:.35rem .6rem !important;
+  }
+
+}
