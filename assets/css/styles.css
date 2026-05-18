@@ -928,3 +928,50 @@ details.card.soft summary::before{
   }
 
 }
+/* =========================================
+   HERO HIGHLIGHTS
+========================================= */
+
+.hero-highlights{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:.75rem;
+
+  margin:1.3rem 0;
+}
+
+.hero-highlights span{
+  display:flex;
+
+  align-items:center;
+
+  gap:.35rem;
+
+  background:#ffffff;
+
+  padding:.55rem .95rem;
+
+  border-radius:999px;
+
+  border:1px solid rgba(46,125,50,.10);
+
+  box-shadow:
+    0 6px 18px rgba(0,0,0,.04);
+
+  font-size:.92rem;
+
+  font-weight:600;
+
+  color:#334155;
+
+  transition:.25s ease;
+}
+
+.hero-highlights span:hover{
+  transform:translateY(-2px);
+
+  box-shadow:
+    0 10px 24px rgba(46,125,50,.10);
+}
