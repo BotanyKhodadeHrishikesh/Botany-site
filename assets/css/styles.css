@@ -1161,3 +1161,60 @@ details.card.soft summary::before{
   }
 
 }
+/* =========================================
+   ULTRA COMPACT MOBILE HEADER
+========================================= */
+
+@media (max-width:768px){
+
+  /* Header */
+
+  .topbar{
+    position:relative !important;
+
+    padding:0 !important;
+
+    background:#2e7d32;
+  }
+
+  .topbar .wrap{
+    padding:.28rem .5rem !important;
+
+    gap:.25rem !important;
+  }
+
+  /* Logo */
+
+  .brand{
+    font-size:.72rem !important;
+
+    font-weight:700 !important;
+
+    gap:.25rem !important;
+  }
+
+  .brand .emoji{
+    font-size:.72rem !important;
+  }
+
+  /* Navigation */
+
+  .links{
+    gap:.22rem !important;
+
+    flex-wrap:wrap !important;
+  }
+
+  .links a{
+    padding:.12rem .45rem !important;
+
+    font-size:.56rem !important;
+
+    border-radius:999px;
+
+    line-height:1.2;
+
+    font-weight:500 !important;
+  }
+
+}
