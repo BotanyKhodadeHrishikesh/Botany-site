@@ -2021,3 +2021,6 @@ details.card.soft summary::before{
 
   background:rgba(46,125,50,.1);
 }
+.second-research-card{
+  margin-top:2rem;
+}
