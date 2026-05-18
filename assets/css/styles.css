@@ -1040,17 +1040,3 @@ body{
    color: #666;
    font-size: 16px;
 }
-/* ---------- Footer Fix ---------- */
-
-.footer .wrap{
-   display:flex;
-   justify-content:space-between;
-   align-items:flex-start;
-   flex-wrap:wrap;
-   gap:30px;
-}
-
-.footer p{
-   max-width:1080px;
-   line-height:1.8;
-}
