@@ -81,7 +81,7 @@ __________________________________________________________________
   </div>
 
 </div>
-```
+
 
 __________________________________________________________________________________
 <div class="profile-links">
@@ -122,21 +122,36 @@ ________________________________________________________________________________
 </div>
 ______________________________________________________________________________________________________________
 
-  <aside class="card">
-      <h2>Highlights</h2>
-      <div class="slideshow" id="slideshow">
-        <img src="assets/img/slide-1.jpg" alt="Highlight 1" class="active">
-        <img src="assets/img/slide-2.jpg" alt="Highlight 2">
-        <img src="assets/img/slide-3.jpg" alt="Highlight 3">
-        <img src="assets/img/slide-4.jpg" alt="Highlight 4">
-        <img src="assets/img/slide-5.jpg" alt="Highlight 5">
-        <img src="assets/img/slide-6.jpg" alt="Highlight 6">
-        <img src="assets/img/slide-7.jpg" alt="Highlight 7">
-        <img src="assets/img/slide-8.jpg" alt="Highlight 8">
-      </div>
-      <div class="dots" id="dots"></div>
-    </aside>
-  </section>
+ <main class="wrap section">
+  <h1>Contact</h1>
+
+  <p>Email: <a href="mailto:khodadesirhhk@gmail.com">khodadesirhhk@gmail.com</a></p>
+
+  <form id="contactForm" class="form" action="https://formspree.io/f/mzzvqbdw" method="POST">
+    <label>Full Name
+      <input name="name" required>
+    </label>
+
+    <label>Email
+      <!-- Formspree expects this field to be named "email" -->
+      <input name="email" type="email" required>
+    </label>
+
+    <label>Subject
+      <input name="subject">
+    </label>
+
+    <label>Message
+      <textarea name="message" rows="6" required></textarea>
+    </label>
+
+    <!-- Honeypot (spam trap) -->
+    <input type="text" name="_gotcha" style="display:none">
+
+    <button class="btn" type="submit">Send</button>
+    <p id="formStatus" class="hint" style="margin-top:.4rem;"></p>
+  </form>
+</main>
       
 <footer class="footer">
   <div class="wrap">
