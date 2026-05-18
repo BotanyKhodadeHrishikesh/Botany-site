@@ -1112,3 +1112,52 @@ details.card.soft summary::before{
   }
 
 }
+/* =========================================
+   COMPACT MOBILE HEADER
+========================================= */
+
+@media (max-width:768px){
+
+  /* Remove sticky header on mobile */
+
+  .topbar{
+    position:relative !important;
+
+    padding:.22rem 0 !important;
+  }
+
+  /* Compact inner spacing */
+
+  .topbar .wrap{
+    padding:.35rem .6rem !important;
+
+    gap:.35rem !important;
+  }
+
+  /* Smaller logo */
+
+  .brand{
+    font-size:.95rem !important;
+
+    font-weight:700;
+  }
+
+  .brand .emoji{
+    font-size:.95rem !important;
+  }
+
+  /* Navigation compact */
+
+  .links{
+    gap:.35rem !important;
+  }
+
+  .links a{
+    padding:.26rem .65rem !important;
+
+    font-size:.74rem !important;
+
+    border-radius:999px;
+  }
+
+}
