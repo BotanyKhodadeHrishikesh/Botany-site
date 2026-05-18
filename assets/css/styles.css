@@ -1919,3 +1919,46 @@ details.card.soft summary::before{
   }
 
 }
+.exp-grid{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+  gap:1.2rem;
+
+  margin-top:1.5rem;
+}
+
+.exp-item{
+  background:white;
+
+  padding:1.4rem;
+
+  border-radius:22px;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+  border-top:5px solid #2e7d32;
+
+  transition:.3s ease;
+}
+
+.exp-item:hover{
+  transform:translateY(-4px);
+}
+
+.exp-item h4{
+  margin-bottom:.7rem;
+
+  color:#16325c;
+
+  font-size:1.1rem;
+}
+
+.exp-item p{
+  color:#555;
+
+  line-height:1.7;
+
+  margin:0;
+}
