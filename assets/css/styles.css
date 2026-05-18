@@ -89,17 +89,60 @@ a:hover{
 .hero-photo img:hover{
   transform:translateY(-6px) scale(1.01);
 }
-.hero-bio h1{margin:0 0 .25rem;font-size:clamp(1.8rem,3vw,2.4rem)}
-.subtitle{margin:0;color:var(--green-2);font-weight:700}
-.affil{color:var(--ink-2)}
-.bio{color:#334155}
-.cta-row{display:flex;gap:.6rem;margin-top:.6rem}
-.btn{
-  display:inline-block;background:var(--green);color:#fff;border-radius:.75rem;
-  padding:.6rem 1rem;border:2px solid var(--green);font-weight:700
+.hero-bio h1{
+  margin:0 0 .5rem;
+
+  font-size:clamp(2.5rem,5vw,4rem);
+
+  line-height:1.05;
+
+  font-weight:900;
+
+  letter-spacing:-1px;
+
+  color:#123c7a;
 }
-.btn.ghost{background:transparent;color:var(--green)}
-.btn.red{background:#ff0000;color:#fff}
+.subtitle{
+  margin:0;
+  color:var(--green-2);
+  font-weight:700;
+.affil{
+  color:var(--ink-2);
+}
+.bio{
+  color:#334155;
+  line-height:1.9;
+}
+
+.cta-row{
+  display:flex;
+  gap:.8rem;
+  margin-top:1rem;
+  flex-wrap:wrap;
+}
+.btn{
+  display:inline-block;
+
+  background:var(--green);
+  color:#fff;
+
+  border-radius:.75rem;
+
+  padding:.7rem 1.1rem;
+
+  border:2px solid var(--green);
+
+  font-weight:700;
+}
+.btn.ghost{
+  background:transparent;
+  color:var(--green);
+}
+
+.btn.red{
+  background:#ff0000;
+  color:#fff;
+}
 .btn.red:hover{background:#cc0000}
 
 /* ---------- Cards / Layout ---------- */
