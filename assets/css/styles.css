@@ -1826,3 +1826,96 @@ details.card.soft summary::before{
   }
 
 }
+.about-card{
+  background:rgba(255,255,255,.78);
+
+  padding:2rem;
+
+  border-radius:30px;
+
+  margin-top:2rem;
+
+  box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+  backdrop-filter:blur(10px);
+}
+
+.card-title{
+  font-size:1.7rem;
+
+  margin-bottom:1rem;
+
+  color:#0b1f44;
+}
+
+.card-intro{
+  color:#555;
+
+  line-height:1.8;
+
+  margin-bottom:1.8rem;
+}
+
+.edu-table{
+  display:flex;
+
+  flex-direction:column;
+
+  gap:1rem;
+}
+
+.edu-row{
+  display:grid;
+
+  grid-template-columns:120px 1fr;
+
+  gap:1.5rem;
+
+  align-items:flex-start;
+
+  background:white;
+
+  padding:1.3rem;
+
+  border-radius:20px;
+
+  border-left:5px solid #2e7d32;
+
+  box-shadow:0 4px 12px rgba(0,0,0,.05);
+
+  transition:.3s ease;
+}
+
+.edu-row:hover{
+  transform:translateY(-3px);
+}
+
+.edu-year{
+  font-size:1.1rem;
+
+  font-weight:700;
+
+  color:#2e7d32;
+}
+
+.edu-content h4{
+  margin:0 0 .4rem;
+
+  color:#16325c;
+}
+
+.edu-content p{
+  margin:0;
+
+  color:#555;
+
+  line-height:1.7;
+}
+
+@media(max-width:768px){
+
+  .edu-row{
+    grid-template-columns:1fr;
+  }
+
+}
