@@ -1702,3 +1702,58 @@ details.card.soft summary::before{
 
   margin-top:.8rem;
 }
+/* =========================================
+   PREMIUM SECTION BACKGROUNDS
+========================================= */
+
+/* Daily news section */
+
+.news-section{
+  background:
+    linear-gradient(135deg,#f8fffa,#edf8f1);
+
+  border-radius:40px;
+
+  padding:2.5rem;
+
+  margin-top:2rem;
+}
+
+/* Courses section */
+
+.courses-section{
+  background:
+    linear-gradient(135deg,#ffffff,#f7fbf8);
+
+  border-radius:40px;
+
+  padding:2.5rem;
+
+  margin-top:2rem;
+}
+
+/* YouTube section */
+
+.channel-section{
+  background:
+    linear-gradient(135deg,#eefaf1,#f8fffb);
+
+  border-radius:40px;
+
+  padding:2.8rem;
+
+  margin-top:2rem;
+}
+
+/* Research section */
+
+.snapshot-section{
+  background:
+    linear-gradient(135deg,#f7fff9,#eef8f1);
+
+  border-radius:40px;
+
+  padding:2.8rem;
+
+  margin-top:2rem;
+}
