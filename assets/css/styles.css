@@ -1382,3 +1382,79 @@ details.card.soft summary::before{
   }
 
 }
+/* =========================================
+   FINAL MOBILE WIDTH FIX
+========================================= */
+
+@media (max-width:768px){
+
+  html,
+  body{
+    width:100%;
+    overflow-x:hidden;
+  }
+
+  *{
+    max-width:100%;
+    box-sizing:border-box;
+  }
+
+  .wrap{
+    width:100% !important;
+
+    max-width:100% !important;
+
+    padding:0 14px !important;
+
+    margin:0 auto;
+  }
+
+  /* About layout */
+
+  .about-grid{
+    display:flex !important;
+
+    flex-direction:column !important;
+
+    gap:1rem !important;
+  }
+
+  /* Text area */
+
+  .about-grid div{
+    width:100% !important;
+
+    min-width:0 !important;
+  }
+
+  /* Prevent text overflow */
+
+  h1,
+  h2,
+  h3,
+  p,
+  li,
+  strong,
+  span{
+    overflow-wrap:break-word;
+
+    word-wrap:break-word;
+
+    word-break:normal;
+  }
+
+  /* About heading */
+
+  h1{
+    font-size:2rem !important;
+  }
+
+  /* Paragraph spacing */
+
+  p,
+  li{
+    line-height:1.8;
+    font-size:.95rem;
+  }
+
+}
