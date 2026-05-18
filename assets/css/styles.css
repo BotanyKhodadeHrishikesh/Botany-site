@@ -1,30 +1,43 @@
 :root{
-  --green: #2e7d32;
-  --green-2: #1b5e20;
-  --ink: #0f172a;
-  --ink-2: #364152;
-  --bg: #ffffff;
-  --bg-alt: #f6faf7;
-  --muted: #667085;
-  --border: #e5e7eb;
+  --green:#2e7d32;
+  --green-2:#1b5e20;
+  --ink:#0f172a;
+  --ink-2:#364152;
+  --bg:#ffffff;
+  --bg-alt:#f6faf7;
+  --muted:#667085;
+  --border:#e5e7eb;
 }
 
-/* ---------- Base + Background ---------- */
-*{box-sizing:border-box}
-html,body{
-  margin:0;padding:0;
+/* =========================================
+   BASE + BACKGROUND
+========================================= */
+
+*{
+  box-sizing:border-box;
+}
+
+html,
+body{
+  margin:0;
+  padding:0;
+
   color:var(--ink);
+
   font:16px/1.6 "Inter",system-ui,Segoe UI,Roboto,Arial,sans-serif;
-  /* fresh, subtle botany gradient */
+
   background:
     radial-gradient(1200px 800px at -10% -10%, #e7fce8 0%, transparent 55%),
     radial-gradient(1200px 800px at 110% 10%, #e0fff4 0%, transparent 45%),
     linear-gradient(180deg, #ffffff 0%, #f7fff9 100%);
 }
+
 .wrap{
   width:92%;
   max-width:1400px;
+
   margin:0 auto;
+
   padding:0 1rem;
 }
 
@@ -35,6 +48,10 @@ html,body{
 .section.alt{
   background:var(--bg-alt);
 }
+
+/* =========================================
+   LINKS
+========================================= */
 
 a{
   color:var(--green);
@@ -49,31 +66,92 @@ a:hover{
   text-decoration:underline;
 }
 
-/* ---------- Topbar ---------- */
-.topbar{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:10}
-.topbar .wrap{display:flex;justify-content:space-between;align-items:center;padding:.8rem 0}
-.brand{display:flex;align-items:center;gap:.5rem;color:var(--ink);font-weight:800}
-.brand .emoji{font-size:1.3rem}
-.links{display:flex;gap:1rem}
-.links a{color:var(--ink-2);font-weight:600}
-.links a:hover{color:var(--green)}
+/* =========================================
+   TOPBAR
+========================================= */
 
-/* ---------- Hero ---------- */
+.topbar{
+  position:sticky;
+  top:0;
+
+  background:#fff;
+
+  border-bottom:1px solid var(--border);
+
+  z-index:10;
+}
+
+.topbar .wrap{
+  display:flex;
+
+  justify-content:space-between;
+
+  align-items:center;
+
+  padding:.8rem 0;
+}
+
+.brand{
+  display:flex;
+
+  align-items:center;
+
+  gap:.5rem;
+
+  color:var(--ink);
+
+  font-weight:800;
+}
+
+.brand .emoji{
+  font-size:1.3rem;
+}
+
+.links{
+  display:flex;
+  gap:1rem;
+}
+
+.links a{
+  color:var(--ink-2);
+  font-weight:600;
+}
+
+.links a:hover{
+  color:var(--green);
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
 .hero{
   background:linear-gradient(180deg,#ffffff,#f3fff6);
 }
 
 .hero-grid{
   display:grid;
+
   grid-template-columns:320px 1fr;
-  gap:2.5rem;
+
+  gap:2rem;
+
   align-items:center;
+
   padding:2rem 0;
+}
+
+@media (max-width:900px){
+
+  .hero-grid{
+    grid-template-columns:1fr;
+  }
+
 }
 
 .hero-photo img{
   width:320px;
-  height:520px;
+  height:630px;
 
   object-fit:cover;
 
@@ -81,7 +159,8 @@ a:hover{
 
   border:8px solid rgba(255,255,255,.85);
 
-  box-shadow:0 25px 60px rgba(46,125,50,.20);
+  box-shadow:
+    0 25px 60px rgba(46,125,50,.20);
 
   transition:.4s ease;
 }
@@ -89,51 +168,64 @@ a:hover{
 .hero-photo img:hover{
   transform:translateY(-6px) scale(1.01);
 }
+
 .hero-bio h1{
   margin:0 0 .5rem;
 
-  font-size:clamp(2.5rem,5vw,4rem);
+  font-size:clamp(2.8rem,5vw,4.3rem);
 
   line-height:1.05;
 
   font-weight:900;
 
-  letter-spacing:-1px;
+  letter-spacing:-2px;
 
   color:#123c7a;
+
+  text-shadow:
+    0 2px 10px rgba(18,60,122,.08);
 }
+
 .subtitle{
   margin:0;
+
   color:var(--green-2);
+
   font-weight:700;
+}
+
 .affil{
   color:var(--ink-2);
 }
+
 .bio{
   color:#334155;
-  line-height:1.9;
 }
 
 .cta-row{
   display:flex;
-  gap:.8rem;
-  margin-top:1rem;
-  flex-wrap:wrap;
+
+  gap:.6rem;
+
+  margin-top:.6rem;
 }
+
 .btn{
   display:inline-block;
 
   background:var(--green);
+
   color:#fff;
 
   border-radius:.75rem;
 
-  padding:.7rem 1.1rem;
+  padding:.6rem 1rem;
 
   border:2px solid var(--green);
 
   font-weight:700;
 }
+
 .btn.ghost{
   background:transparent;
   color:var(--green);
@@ -143,13 +235,36 @@ a:hover{
   background:#ff0000;
   color:#fff;
 }
-.btn.red:hover{background:#cc0000}
 
-/* ---------- Cards / Layout ---------- */
-.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin:2rem auto}
-@media (max-width:900px){.grid-2{grid-template-columns:1fr}}
+.btn.red:hover{
+  background:#cc0000;
+}
+
+/* =========================================
+   CARDS / LAYOUT
+========================================= */
+
+.grid-2{
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  gap:1rem;
+
+  margin:2rem auto;
+}
+
+@media (max-width:900px){
+
+  .grid-2{
+    grid-template-columns:1fr;
+  }
+
+}
+
 .card{
   border-radius:24px;
+
   padding:1.2rem;
 
   border:none;
@@ -163,66 +278,136 @@ a:hover{
 .card:hover{
   transform:translateY(-4px);
 }
-.card.soft{background:#fff}
-.hint{color:var(--muted);font-size:.9rem;margin-top:.4rem}
 
-
-/* ---------- Daily News (CLEAN, for loop script) ---------- */
-/* ---------- Daily News (scrollable version) ---------- */
-.ticker{
-  position: relative;
-  height: 250px;       /* adjust height as needed */
-  background: #fff;
-  border: 1px dashed var(--border);
-  border-radius: .75rem;
-  overflow-y: auto;     /* add vertical scrollbar */
-  padding: 0;
+.card.soft{
+  background:#fff;
 }
 
-/* optional: style the list */
-.ticker ul{
-  list-style:none;
-  margin:0;
+.hint{
+  color:var(--muted);
+
+  font-size:.9rem;
+
+  margin-top:.4rem;
+}
+
+/* =========================================
+   DAILY NEWS / TICKER
+========================================= */
+
+.ticker{
+  position:relative;
+
+  height:250px;
+
+  background:#fff;
+
+  border:1px dashed var(--border);
+
+  border-radius:.75rem;
+
+  overflow-y:auto;
+
   padding:0;
 }
+
+.ticker ul{
+  list-style:none;
+
+  margin:0;
+
+  padding:0;
+
+  width:100%;
+}
+
 .ticker li{
   padding:1rem 1.25rem;
+
   line-height:1.35;
+
   border-bottom:1px dashed var(--border);
+
   color:#111827;
 }
 
-/* optional: nicer custom scrollbar (works in WebKit browsers & Firefox) */
-.ticker::-webkit-scrollbar {
-  width: 8px;
-}
-.ticker::-webkit-scrollbar-thumb {
-  background-color: var(--green);
-  border-radius: 4px;
-}
-.ticker::-webkit-scrollbar-track {
-  background: #f1f5f9;
+/* Scrollbar */
+
+.ticker::-webkit-scrollbar{
+  width:8px;
 }
 
-}
-/* IMPORTANT: simple list (no animation here; JS will handle swapping) */
-.ticker ul{list-style:none;margin:0;padding:0;width:100%;}
-.ticker li{padding:1rem 1.25rem;line-height:1.35;color:#111827}
- /* (No keyframes or absolute positioning to avoid conflicts) */
+.ticker::-webkit-scrollbar-thumb{
+  background-color:var(--green);
 
-/* ---------- Slideshow ---------- */
+  border-radius:4px;
+}
+
+.ticker::-webkit-scrollbar-track{
+  background:#f1f5f9;
+}
+
+/* =========================================
+   SLIDESHOW
+========================================= */
+
 .slideshow{
-  position:relative;height:300px;border:1px dashed var(--border);
-  border-radius:.75rem;overflow:hidden;background:#f3f6f4
+  position:relative;
+
+  height:300px;
+
+  border:1px dashed var(--border);
+
+  border-radius:.75rem;
+
+  overflow:hidden;
+
+  background:#f3f6f4;
 }
+
 .slideshow img{
-  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
-  opacity:0;transition:opacity .8s ease
+  position:absolute;
+
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+
+  opacity:0;
+
+  transition:opacity .8s ease;
 }
-.slideshow img.active{opacity:1}
-.dots{display:flex;gap:.4rem;margin-top:.6rem}
-.dots button{width:10px;height:10px;border-radius:50%;border:0;background:#c7e6ce;cursor:pointer}
-.dots button.active{background:var(--green)}
+
+.slideshow img.active{
+  opacity:1;
+}
+
+.dots{
+  display:flex;
+
+  gap:.4rem;
+
+  margin-top:.6rem;
+}
+
+.dots button{
+  width:10px;
+  height:10px;
+
+  border-radius:50%;
+
+  border:0;
+
+  background:#c7e6ce;
+
+  cursor:pointer;
+}
+
+.dots button.active{
+  background:var(--green);
+}
 
 /* ---------- Courses Overview ---------- */
 .cards-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
