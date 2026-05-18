@@ -933,3 +933,51 @@ details.card.soft summary::before{
 .hero-photo img:hover{
   transform:translateY(-6px) scale(1.01);
 }
+.education-box,
+.experience-box,
+.research-skills-box,
+.skill-column,
+.about-section {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.education-box p,
+.experience-box p,
+.skill-column p {
+    line-height: 1.9;
+    margin-bottom: 18px;
+    color: #222;
+}
+
+.education-box ul,
+.experience-box ul,
+.skill-column ul {
+    padding-left: 24px;
+    line-height: 1.9;
+}
+
+.education-box li,
+.experience-box li,
+.skill-column li {
+    margin-bottom: 14px;
+    text-align: justify;
+}
+
+.education-box h3,
+.experience-box h3,
+.research-skills-box h3 {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.skill-column h4 {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1b4332;
+}
+body{
+   font-family: 'Poppins', sans-serif;
+   line-height: 1.8;
