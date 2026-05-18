@@ -1962,3 +1962,62 @@ details.card.soft summary::before{
 
   margin:0;
 }
+.research-card{
+  background:white;
+
+  padding:2rem;
+
+  border-radius:26px;
+
+  box-shadow:0 5px 18px rgba(0,0,0,.05);
+
+  border-top:6px solid #2e7d32;
+
+  margin-top:1.5rem;
+}
+
+.research-header h4{
+  font-size:1.35rem;
+
+  margin-bottom:.8rem;
+
+  color:#16325c;
+}
+
+.research-header p{
+  color:#555;
+
+  line-height:1.8;
+
+  margin-bottom:1.8rem;
+}
+
+.research-points{
+  display:grid;
+
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+  gap:1rem;
+}
+
+.research-point{
+  background:rgba(46,125,50,.06);
+
+  padding:1rem 1.1rem;
+
+  border-radius:18px;
+
+  line-height:1.7;
+
+  color:#444;
+
+  border-left:4px solid #2e7d32;
+
+  transition:.3s ease;
+}
+
+.research-point:hover{
+  transform:translateY(-3px);
+
+  background:rgba(46,125,50,.1);
+}
