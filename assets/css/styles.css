@@ -978,7 +978,15 @@ details.card.soft summary::before{
     font-weight: 600;
     color: #1b4332;
 }
+
 body{
    font-family: 'Poppins', sans-serif;
+}
+
+.about-section,
+.education-box,
+.experience-box,
+.research-skills-box,
+.skill-column{
    line-height: 1.8;
 }
